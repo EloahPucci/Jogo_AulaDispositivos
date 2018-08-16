@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Joguinho</string>
+    <string name="digite_um_n_mero">Digite um número:</string>
+    <string name="texto2">Acertou!!!</string>
+    <string name="texto3">Muito alto. Tente novamente!!!</string>
+    <string name="texto4">Muito baixo. Tente novamente!!!</string>
+</resources>
