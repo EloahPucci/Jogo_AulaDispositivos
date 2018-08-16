@@ -25,6 +25,7 @@ public class MainActivity extends Activity implements View.OnKeyListener {
     private void preparacaoInicial() {
         numeroSorteado = (int)(Math.random() * 101);
         msg = (TextView) findViewById(R.id.mensagem);
+        msgCont = (TextView) findViewById(R.id.contTentativas);
         entrada = (EditText) findViewById(R.id.entrada);
         entrada.setOnKeyListener(this);
     }
@@ -34,7 +35,8 @@ public class MainActivity extends Activity implements View.OnKeyListener {
         if(keyCode == KeyEvent.KEYCODE_ENTER && keyEvent.getAction() == KeyEvent.ACTION_UP ){
             verificar();
             cont++;
-            msgCont.setText(" Tentativas");
+            msgCont.setText(cont + " Tentativas");
+            entrada.setText("");
             return  true;
         }
 
