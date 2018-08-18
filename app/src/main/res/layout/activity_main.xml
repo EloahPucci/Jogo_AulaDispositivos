@@ -44,7 +44,8 @@
         android:layout_width="113dp"
         android:layout_height="wrap_content"
         android:text="Testar"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:onClick="bt1"/>
 
     <TextView
         android:id="@+id/contTentativas"

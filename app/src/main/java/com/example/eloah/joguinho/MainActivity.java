@@ -34,9 +34,6 @@ public class MainActivity extends Activity implements View.OnKeyListener {
     public boolean onKey(View view, int keyCode, KeyEvent keyEvent) {
         if(keyCode == KeyEvent.KEYCODE_ENTER && keyEvent.getAction() == KeyEvent.ACTION_UP ){
             verificar();
-            cont++;
-            msgCont.setText(cont + " Tentativas");
-            entrada.setText("");
             return  true;
         }
 
@@ -53,5 +50,13 @@ public class MainActivity extends Activity implements View.OnKeyListener {
         } else{
             msg.setText(R.string.texto4);
         }
+
+        cont++;
+        msgCont.setText(cont + " Tentativas");
+        entrada.setText("");
+    }
+
+    public void bt1(View v){
+        verificar();
     }
 }
